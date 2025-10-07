@@ -1,0 +1,21 @@
+{
+  "name": "com.boxbearllc.materiallibrary",
+  "version": "0.0.1",
+  "displayName": "Box Bear`s Material Library",
+  "description": "Commonly used materials for Box Bear projects.",
+  "unity": "2022.3.62",
+  "unityRelease": "f2",
+  "documentationUrl": "https://boxbear.co.uk/",
+  "keywords": [
+    "Box Bear",
+    "Material",
+    "Library",
+    "PBR",
+    "Shaders"
+  ],
+  "author": {
+    "name": "Box Bear",
+    "email": "email@boxbear.co.uk",
+    "url": "https://boxbear.co.uk/"
+  }
+}
