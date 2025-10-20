@@ -1,0 +1,249 @@
+fileFormatVersion: 2
+guid: fe82b8221a614784882698d741d00f09
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_BrickWall001_xerbj1
+    second: {fileID: 2100000, guid: dc46eccb49b3ef14fae49a4b21e0a60b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Grass002_sbykrep0
+    second: {fileID: 2100000, guid: 61875655d116ba343afa4f9d2d525eb6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Grass003_pcciV0
+    second: {fileID: 2100000, guid: 1c85461a88714f64d8885facbfc54f2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_GroundDirt001_xisbchvs
+    second: {fileID: 2100000, guid: 5cdd35e62b18b944f82568edd0c1a0ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_RockyGround001_vjdqcba
+    second: {fileID: 2100000, guid: 7a62b98e1caba594bb38acf33eb48101, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_RockyWall001_ssqrw1
+    second: {fileID: 2100000, guid: 2dc615662dc5b534e94ff7923ae92481, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Tarp002_vb0keb3
+    second: {fileID: 2100000, guid: b7bbe35f55b04f24daa98491edc2dff7, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BrickWall001_xerbj1_Basecolor
+    second: {fileID: 2800000, guid: 4bbd26d0cb2e2044f9fcd363a755c254, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BrickWall001_xerbj1_Normal
+    second: {fileID: 2800000, guid: 6576b52b6bf47434793a23f278dc48f6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BrickWall001_xerbj1_Roughness
+    second: {fileID: 2800000, guid: 9b0b19f9350f1854586a43f28ffe9a5e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Grass002_sbykrep0_Basecolor
+    second: {fileID: 2800000, guid: 7f1c2ef969e5a024a80445c469b6be32, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Grass002_sbykrep0_NormalMap
+    second: {fileID: 2800000, guid: 6949001cdc0de0f4a8c85556ed94e7fd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Grass002_sbykrep0_Roughness
+    second: {fileID: 2800000, guid: 89b51c34c56e7ae418dbae05a9725298, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Grass003_pcciV0_Basecolor
+    second: {fileID: 2800000, guid: f1497c0bc3b5fa6469ff923da9bb6f11, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Grass003_pcciV0_NormalMap
+    second: {fileID: 2800000, guid: c8e8d74d86e9d5648a3b0677684b53d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Grass003_pcciV0_Roughness
+    second: {fileID: 2800000, guid: 408c0c93d1bbda8489c7aa81e28158df, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GroundDirt001_xisbchvs_Basecolor
+    second: {fileID: 2800000, guid: 0b6b628338bc6774d93140bc7b089624, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GroundDirt001_xisbchvs_Normal
+    second: {fileID: 2800000, guid: e57f8ebc18f539b4fb03798358083b24, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: GroundDirt001_xisbchvs_Roughness
+    second: {fileID: 2800000, guid: 87010b5b92e636c46a27dd1c570ce718, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RockyGround001_vjdqcba_Basecolor
+    second: {fileID: 2800000, guid: 9df39eeef41349446aeaf43708c854bf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RockyGround001_vjdqcba_Normal
+    second: {fileID: 2800000, guid: 716c39907a2def3478bd254b84c60a5f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RockyGround001_vjdqcba_Roughness
+    second: {fileID: 2800000, guid: ef810b02a68d90b4c90b56fd69ebe77b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RockyWall001_ssqrw1_Basecolor
+    second: {fileID: 2800000, guid: 02556d44e3ae125419f9e09276c476a9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RockyWall001_ssqrw1_NormalMap
+    second: {fileID: 2800000, guid: baf1aa86d19d0ee4faa1dc9edebcb65a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: RockyWall001_ssqrw1_Roughness
+    second: {fileID: 2800000, guid: ec7f0544a6cc2cb4a8e720637afa9b9b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tarp002_vb0keb3_Basecolor
+    second: {fileID: 2800000, guid: 16e434b044728e54b8f426703cd332f2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tarp002_vb0keb3_NormalMap
+    second: {fileID: 2800000, guid: a92f95f21a8b0864b8ff1779eff6c610, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Tarp002_vb0keb3_Roughness
+    second: {fileID: 2800000, guid: d9bf646dc9426df49a64f8b76a46c878, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

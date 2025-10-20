@@ -647,7 +647,7 @@
     "m_ObjectId": "0420fdce32df4b439167d72059fcd609",
     "m_Title": "Making triplanar object space",
     "m_Position": {
-        "x": -4352.0,
+        "x": -4352.00048828125,
         "y": 236.99998474121095
     }
 }
@@ -1032,7 +1032,7 @@
     "m_ObjectId": "23c033e03c814c3c96f227baf15b647a",
     "m_Title": "Basecolor",
     "m_Position": {
-        "x": -1528.999755859375,
+        "x": -1529.0,
         "y": 137.0
     }
 }
@@ -2126,10 +2126,10 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": 1.0,
-    "m_FloatType": 0,
+    "m_FloatType": 1,
     "m_RangeValues": {
-        "x": 0.0,
-        "y": 1.0
+        "x": 0.5,
+        "y": 100.0
     }
 }
 
@@ -2352,7 +2352,7 @@
     "m_ObjectId": "7b661a9764534d7fa950675975e5e86a",
     "m_Title": "Smoothness",
     "m_Position": {
-        "x": -1550.9998779296875,
+        "x": -1551.000244140625,
         "y": 1188.0
     }
 }
@@ -2842,8 +2842,8 @@
     "m_ObjectId": "b62ea924dca9466f8bc2b141358b7fc2",
     "m_Title": "Normal Map",
     "m_Position": {
-        "x": -1869.9998779296875,
-        "y": 663.0
+        "x": -1870.000244140625,
+        "y": 662.9998779296875
     }
 }
 
