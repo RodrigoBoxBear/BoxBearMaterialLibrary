@@ -7,35 +7,41 @@ using System;
 
 namespace BoxBearMaterialTools
 {
+    /// <summary>
+    /// Entry point for the functionality of the Material Tools. This class is responsible for adding the "Material Tools"
+    /// menu in the Unity editor.
+    /// </summary>
     public class EditorMenu
     {
-        #region Tools
 
-        [MenuItem("Material Tools/Fix All Shaders", false, 10)]
-        public static void FixShadersAllHierarchy()
+        [MenuItem("Material Tools/Fix Shaders", false, 10)]
+        public static void FixShaders()
         {
-            GameObject selection = Selection.activeGameObject;
+            // Retrieve the GameObject selected in the Scene Window.
+            GameObject selection = Selection.activeGameObject; 
 
+            // Protection against having no GameObject selected.
             if (selection == null)
             {
                 Debug.LogWarning("Fix All Shaders failed. Please select a gameobject in the Scene window.");
                 return;
             }
 
-            
-                StringBuilder logReport = new StringBuilder();
-                logReport.Append($"Fix All Shaders Report.  Root GameObject('{selection.name}') :");
-                logReport.AppendLine();
-                logReport.AppendLine("Please select this message to view the list.");
+            // Here we create a StringBuilder that will constantly have text added to throughout the whole process.
+            // The result at the end will be the Log Report.
+            StringBuilder logReport = new StringBuilder();
+                
+            // Create the header for the Log Report.
+            logReport.Append($"Fix Shaders Report.  Root GameObject('{selection.name}') :");
+            logReport.AppendLine();
 
-                List<String> database = MaterialToolsEngine.GetAllSubfoldersNames();
-                MaterialToolsEngine.RecursiveFix(selection, 0, logReport, database);
+            // Get the list of codes for the Special Shaders by looking into the "Database" folder.
+            List<String> database = MaterialToolsEngine.GetAllSubfoldersNames("Assets/LibraryPackage/Database");
 
-            /* Debug.Log(logReport.ToString()); */
+            MaterialToolsEngine.RecursiveFix(selection, 0, logReport, database);
+
+            // Open up the Log Report in Notepad, showing the user what happened to each material.
             MaterialToolsDebugger.OpenInNotepad(logReport);
-
-
-            //*/
         }
 
         [MenuItem("Material Tools/Open Documentation", false, 20)]
@@ -44,12 +50,6 @@ namespace BoxBearMaterialTools
             Application.OpenURL("https://boxbear-my.sharepoint.com/:w:/g/personal/rodrigo_boxbear_co_uk/EQkHoMX2z_BPl-iKoAPfiRIBmy8yLsv5qyo_pMXwCowbeQ?e=jfn29e");
         }
 
-        [MenuItem("Material Tools/Log", false, 30)]
-        public static void LogInNotepad()
-        {
-            MaterialToolsDebugger.OpenInNotepad(new StringBuilder("Test"));
-        }
 
-        #endregion
     }
 }

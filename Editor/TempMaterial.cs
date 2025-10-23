@@ -41,7 +41,10 @@ namespace BoxBearMaterialTools
             roughnessValue = 1f - _material.GetFloat("_Smoothness");    // Applies One Minus logic to convert Glossiness (Smoothness) to Roughness
         }
 
-        public string ReportOnConsole()
+        /// <summary>
+        /// Generates a formated text with information about this TempMaterial instance.
+        /// </summary>
+        public string GenerateReport()
         {
             StringBuilder sb = new StringBuilder($"Console Report for TempAssetPBR '{materialName}'");
             sb.AppendLine();
@@ -51,12 +54,12 @@ namespace BoxBearMaterialTools
             sb.AppendLine($"Color Tint: {colorTint.ToString()}");
             sb.AppendLine($"Roughness Value: {roughnessValue}");
 
-
-            Debug.Log(sb.ToString()); // Finally, logs the message.
-
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Converts a TempMaterial back to a material.
+        /// </summary>
         public Material CreateMaterialFromTemp(String _name, Shader _shader)
         {
             Material result = new(_shader);
