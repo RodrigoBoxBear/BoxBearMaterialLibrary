@@ -69,7 +69,7 @@ namespace BoxBearMaterialTools
                         Debug.LogWarning($"Material {material.name} was identified as a Special shader as it contains item code '{itemCode}'");
 
                         // FIX 2: Build the real folder path
-                        string folderPath = $"Assets/LibraryPackage/Database/{itemCode}";
+                        string folderPath = $"{GetPath()}Database/{itemCode}";
 
                         // FIX 3: Find all materials inside that folder
                         string[] guids = AssetDatabase.FindAssets("t:Material", new[] { folderPath });
@@ -158,7 +158,6 @@ namespace BoxBearMaterialTools
             foreach (TempMaterial tempMat in tempMatList)
             {
                 logReport.Append($"({tempMat.materialName})");
-                Debug.LogWarning($"{obj.name} : {tempMat.materialName}");
             }
 
             // Recursion for the children
@@ -184,13 +183,21 @@ namespace BoxBearMaterialTools
         /// </summary>
         /// <param name="isRelease"> Set to true before exporting as a Unity Package.</param>
         /// <returns></returns>
-        public static String GetPath(bool isRelease)
+        public static String GetPath()
         {
+            // Are we shipping?
+            bool isRelease = true;
+
+            // Assume we are not shipping it (Testing inside the 'BoxBearMaterialLibrary'_Creation' Repository).
             string result = "Assets/LibraryPackage/";
+
+            // If the package is being shipped as a Unity Package, the path will be in the immutable 'Packages'
+            // folders instead.
             if (isRelease)
             {
                 result = "Packages/com.boxbearllc.materialtools/";
             }
+            
             return result;
         }
     }

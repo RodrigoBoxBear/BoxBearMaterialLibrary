@@ -35,7 +35,7 @@ namespace BoxBearMaterialTools
             logReport.AppendLine();
 
             // Get the list of codes for the Special Shaders by looking into the "Database" folder.
-            List<String> database = MaterialToolsEngine.GetAllSubfoldersNames(MaterialToolsEngine.GetPath(true) + "Database");
+            List<String> database = MaterialToolsEngine.GetAllSubfoldersNames(MaterialToolsEngine.GetPath() + "Database");
             // Debug.LogWarning(MaterialToolsEngine.GetPath(false) + "Database");
 
             MaterialToolsEngine.RecursiveFix(selection, 0, logReport, database);
