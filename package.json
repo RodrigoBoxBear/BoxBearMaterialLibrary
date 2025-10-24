@@ -2,7 +2,7 @@
   "name": "com.boxbearllc.materialtools",
   "version": "0.1.1",
   "displayName": "Box Bear's Material Tools",
-  "description": "Tools to better integrate the modeling software into Unity.",
+  "description": "Unity Package that helps integrate exported 3D models from Blender to Unity.",
   "unity": "2022.3",
   "unityRelease": "62f2",
   "documentationUrl": "https://boxbear.co.uk/",
