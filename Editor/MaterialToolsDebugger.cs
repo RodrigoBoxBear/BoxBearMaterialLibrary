@@ -8,7 +8,6 @@ namespace BoxBearMaterialTools
 {
     public class MaterialToolsDebugger : MonoBehaviour
     {
-
         /// <summary>
         /// Opens up Notepad in the user's computer, showing the message in the parameter.
         /// </summary>

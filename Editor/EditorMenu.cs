@@ -13,7 +13,6 @@ namespace BoxBearMaterialTools
     /// </summary>
     public class EditorMenu
     {
-
         [MenuItem("Material Tools/Fix Shaders", false, 10)]
         public static void FixShaders()
         {
@@ -29,14 +28,15 @@ namespace BoxBearMaterialTools
 
             // Here we create a StringBuilder that will constantly have text added to throughout the whole process.
             // The result at the end will be the Log Report.
-            StringBuilder logReport = new StringBuilder();
+            StringBuilder logReport = new ();
                 
             // Create the header for the Log Report.
             logReport.Append($"Fix Shaders Report.  Root GameObject('{selection.name}') :");
             logReport.AppendLine();
 
             // Get the list of codes for the Special Shaders by looking into the "Database" folder.
-            List<String> database = MaterialToolsEngine.GetAllSubfoldersNames("Assets/LibraryPackage/Database");
+            List<String> database = MaterialToolsEngine.GetAllSubfoldersNames(MaterialToolsEngine.GetPath(true) + "Database");
+            // Debug.LogWarning(MaterialToolsEngine.GetPath(false) + "Database");
 
             MaterialToolsEngine.RecursiveFix(selection, 0, logReport, database);
 

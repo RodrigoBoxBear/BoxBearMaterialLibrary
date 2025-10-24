@@ -19,8 +19,6 @@ namespace BoxBearMaterialTools
         /// </summary>
         public static List<TempMaterial> SwitchShaders(GameObject _gameObject, Shader _newShader, bool logErrors, List<string> database, StringBuilder logReport)
         {
-            
-
             List<TempMaterial> result = new List<TempMaterial>();
 
             // Protection against no GameObject being passed in the arguments.
@@ -61,8 +59,6 @@ namespace BoxBearMaterialTools
                 // This is because trying to create a TempMaterial from a 'Box Bear/OpaqueLit' is problematic.
                 // Perhaps the protection should be in the constructor level of the TempMaterial class.
                 result.Add(new TempMaterial(material));
-
-
 
                 // Shader Switch
                 foreach (string itemCode in database)
@@ -159,8 +155,6 @@ namespace BoxBearMaterialTools
 
             List<TempMaterial> tempMatList = SwitchShaders(obj, newShader, false, database, logReport);
 
-
-
             foreach (TempMaterial tempMat in tempMatList)
             {
                 logReport.Append($"({tempMat.materialName})");
@@ -183,6 +177,21 @@ namespace BoxBearMaterialTools
             List<string> subfolderList = subfolderArray.Select(Path.GetFileName).ToList();
 
             return subfolderList;
+        }
+
+        /// <summary>
+        /// Retrieves the Package path.
+        /// </summary>
+        /// <param name="isRelease"> Set to true before exporting as a Unity Package.</param>
+        /// <returns></returns>
+        public static String GetPath(bool isRelease)
+        {
+            string result = "Assets/LibraryPackage/";
+            if (isRelease)
+            {
+                result = "Packages/com.boxbearllc.materialtools/";
+            }
+            return result;
         }
     }
 }
